@@ -1,0 +1,86 @@
+syntax = "proto3";
+option go_package = "ProtoBuf/ProtoBufPacket";
+option csharp_namespace = "ProtoBuf.ProtoBufPacket";
+
+// PayloadType 열거형 정의
+enum PayloadType {
+  // 어플 관련
+  AppInit           = 0;
+  AppVersionCheck   = 1;
+  AppCurrentUTC     = 2;
+  AppReconnect      = 3;
+  AppDisconnect     = 4;
+  AppQuit           = 5;
+
+  // 유저 관련
+  UserEnter         = 1001;
+
+  // 방 관련
+  RoomsSearch       = 2001;
+  RoomCreate        = 2002;
+  RoomJoin          = 2003;
+  RoomQuit          = 2004;
+
+  // B게임 관련
+  // RPSGamePlayersInfo  = 3001;
+  // RPSGameTableInfo  = 3002;
+  
+}
+
+// PayloadClass 메시지 정의
+message PayloadClass {
+  // App에 관한 정보
+  int32 appRunOS = 1;                // 1. 디바이스 정보
+  string appName = 2;                // 2. 애플리케이션 이름
+  string appVersion = 3;             // 3. 애플리케이션 버전 .. 버전 정보는 일반적으로 "메이저.마이너.패치"와 같은 형식
+  // Time에 관한 정보
+  int64 currentUTC = 4;              // 4. 현재 시간
+  // User에 관한 정보
+  string userUUID = 5;               // 5. 사용자 UUID // 로그인 전엔 정보없음
+  // 데이터에 관한 정보
+  PayloadType requestCode = 6;       // 6. 코드 번호
+  bytes requestData = 7;             // 7. 요청 데이터 (바이트 배열)
+  string resultMessage = 8;          // 8. 결과 메세지
+  int32 broadCastGroup = 9;          // 9. 방 번호 // 방 입장 전엔 0
+}
+
+///////////////////////////
+//! User
+///////////////////////////
+// PayloadClassUserEnder 메시지 정의 (1001)
+message PayloadClassUserEnter {
+  string userName = 1;
+}
+
+///////////////////////////
+//! Room
+///////////////////////////
+// RoomsSearch 메시지 정의 (2001)
+message PayloadClassRoomsSearch {
+  int32 roomSeq = 1;       // 1. 방 번호
+  int32 roomType = 2;     // 2. 방 게임 타입
+  int32 roomNowPersonnel = 3;// 3. 현재 방에 몇명 있는지
+  int32 roomMaxPersonnel = 4;// 4. 현재 방에 몇명 참여 가능한지
+}
+
+// RoomJoin 메시지 정의 (2002)
+message PayloadClassRoomCreate {
+  int32 roomSeq = 1;// 1. 방 번호
+  int32 roomType = 2;// 2. 방 게임 타입
+}
+
+// RoomJoin 메시지 정의 (2002)
+message PayloadClassRoomJoin {
+  int32 roomSeq = 1;// 1. 방 번호
+  int32 roomType = 2;// 2. 방 게임 타입
+}
+
+// RoomQuit 메시지 정의 (2003)
+message PayloadClassRoomQuit {
+  int32 roomSeq = 1; // 1. 방 번호
+  int32 roomType = 2;// 2. 방 게임 타입
+}
+
+///////////////////////////
+//! RPSGame
+///////////////////////////
