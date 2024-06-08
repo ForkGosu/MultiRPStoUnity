@@ -21,10 +21,12 @@ enum PayloadType {
   RoomJoin          = 2003;
   RoomQuit          = 2004;
 
-  // B게임 관련
-  // RPSGamePlayersInfo  = 3001;
-  // RPSGameTableInfo  = 3002;
-  
+  // RPS게임 관련
+  RPSGamePlayersInfo  = 3001;
+  RPSGameTableInfo  = 3002;
+  RPSGameGo  = 3003;
+  RPSGamePlaying  = 3004;
+  RPSGameProgress  = 3005;
 }
 
 // PayloadClass 메시지 정의
@@ -84,3 +86,19 @@ message PayloadClassRoomQuit {
 ///////////////////////////
 //! RPSGame
 ///////////////////////////
+
+//* PayloadClassRPSGamePlayersInfo 메시지 정의 (3001)
+message PayloadClassRPSGamePlayersInfo {
+  repeated string rpsGamePlayerNames = 1; // 자리를 모두 ""으로 표시, 자리에 사람이 있으면 사람의 닉네임으로 대체
+}
+
+//* PayloadClassRPSGameTableInfo 메시지 정의 (3002)
+message PayloadClassRPSGameTableInfo {
+  int32 rpsTableStatus = 1; // 게임이 시작상태인지 대기 상태인지
+  repeated int32 rpsGamePlays = 2; // 가위바위보 뭐냇는지 확인?
+}
+
+//* PayloadClassRPSGamePlaying 메시지 정의 (3004)
+message PayloadClassRPSGamePlaying {
+  int32 rpsGamePlay = 1; // 가위바위보 뭐냇는지 확인?
+}

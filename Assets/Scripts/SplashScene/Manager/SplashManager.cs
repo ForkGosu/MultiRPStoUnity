@@ -28,10 +28,14 @@ public class SplashManager : MonoSingleton<SplashManager>
                 
                 ClientTimer.SetServerUTC(_payload.CurrentUTC);
                 AppManager.Instance.LoadSceneAsync("Login");
-            } else {
+            } else if (_payload.ResultMessage == "Version_Fail"){
                 AppManager.Instance.IsAppVersion = false;
                 WebSocketManager.Instance.WebSocketClose();
                 AlertWindowManager.Instance.Alert("버전이 다릅니다.\n앱을 업데이트 해주세요.", () => AppManager.Instance.AppQuit());
+            } else if (_payload.ResultMessage == "Name_Fail"){
+                AppManager.Instance.IsAppVersion = false;
+                WebSocketManager.Instance.WebSocketClose();
+                AlertWindowManager.Instance.Alert("이름이 다릅니다.\n앱을 업데이트 해주세요.", () => AppManager.Instance.AppQuit());
             }
         }
     }

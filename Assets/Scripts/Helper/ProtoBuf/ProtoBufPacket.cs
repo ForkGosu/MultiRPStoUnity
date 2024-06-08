@@ -36,13 +36,20 @@ namespace ProtoBuf.ProtoBufPacket {
             "YXNzUm9vbUNyZWF0ZRIPCgdyb29tU2VxGAEgASgFEhAKCHJvb21UeXBlGAIg",
             "ASgFIjkKFFBheWxvYWRDbGFzc1Jvb21Kb2luEg8KB3Jvb21TZXEYASABKAUS",
             "EAoIcm9vbVR5cGUYAiABKAUiOQoUUGF5bG9hZENsYXNzUm9vbVF1aXQSDwoH",
-            "cm9vbVNlcRgBIAEoBRIQCghyb29tVHlwZRgCIAEoBSrFAQoLUGF5bG9hZFR5",
-            "cGUSCwoHQXBwSW5pdBAAEhMKD0FwcFZlcnNpb25DaGVjaxABEhEKDUFwcEN1",
-            "cnJlbnRVVEMQAhIQCgxBcHBSZWNvbm5lY3QQAxIRCg1BcHBEaXNjb25uZWN0",
-            "EAQSCwoHQXBwUXVpdBAFEg4KCVVzZXJFbnRlchDpBxIQCgtSb29tc1NlYXJj",
-            "aBDRDxIPCgpSb29tQ3JlYXRlENIPEg0KCFJvb21Kb2luENMPEg0KCFJvb21R",
-            "dWl0ENQPQjNaF1Byb3RvQnVmL1Byb3RvQnVmUGFja2V0qgIXUHJvdG9CdWYu",
-            "UHJvdG9CdWZQYWNrZXRiBnByb3RvMw=="));
+            "cm9vbVNlcRgBIAEoBRIQCghyb29tVHlwZRgCIAEoBSI8Ch5QYXlsb2FkQ2xh",
+            "c3NSUFNHYW1lUGxheWVyc0luZm8SGgoScnBzR2FtZVBsYXllck5hbWVzGAEg",
+            "AygJIkwKHFBheWxvYWRDbGFzc1JQU0dhbWVUYWJsZUluZm8SFgoOcnBzVGFi",
+            "bGVTdGF0dXMYASABKAUSFAoMcnBzR2FtZVBsYXlzGAIgAygFIjEKGlBheWxv",
+            "YWRDbGFzc1JQU0dhbWVQbGF5aW5nEhMKC3Jwc0dhbWVQbGF5GAEgASgFKrAC",
+            "CgtQYXlsb2FkVHlwZRILCgdBcHBJbml0EAASEwoPQXBwVmVyc2lvbkNoZWNr",
+            "EAESEQoNQXBwQ3VycmVudFVUQxACEhAKDEFwcFJlY29ubmVjdBADEhEKDUFw",
+            "cERpc2Nvbm5lY3QQBBILCgdBcHBRdWl0EAUSDgoJVXNlckVudGVyEOkHEhAK",
+            "C1Jvb21zU2VhcmNoENEPEg8KClJvb21DcmVhdGUQ0g8SDQoIUm9vbUpvaW4Q",
+            "0w8SDQoIUm9vbVF1aXQQ1A8SFwoSUlBTR2FtZVBsYXllcnNJbmZvELkXEhUK",
+            "EFJQU0dhbWVUYWJsZUluZm8QuhcSDgoJUlBTR2FtZUdvELsXEhMKDlJQU0dh",
+            "bWVQbGF5aW5nELwXEhQKD1JQU0dhbWVQcm9ncmVzcxC9F0IzWhdQcm90b0J1",
+            "Zi9Qcm90b0J1ZlBhY2tldKoCF1Byb3RvQnVmLlByb3RvQnVmUGFja2V0YgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::ProtoBuf.ProtoBufPacket.PayloadType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -51,7 +58,10 @@ namespace ProtoBuf.ProtoBufPacket {
             new pbr::GeneratedClrTypeInfo(typeof(global::ProtoBuf.ProtoBufPacket.PayloadClassRoomsSearch), global::ProtoBuf.ProtoBufPacket.PayloadClassRoomsSearch.Parser, new[]{ "RoomSeq", "RoomType", "RoomNowPersonnel", "RoomMaxPersonnel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ProtoBuf.ProtoBufPacket.PayloadClassRoomCreate), global::ProtoBuf.ProtoBufPacket.PayloadClassRoomCreate.Parser, new[]{ "RoomSeq", "RoomType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ProtoBuf.ProtoBufPacket.PayloadClassRoomJoin), global::ProtoBuf.ProtoBufPacket.PayloadClassRoomJoin.Parser, new[]{ "RoomSeq", "RoomType" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ProtoBuf.ProtoBufPacket.PayloadClassRoomQuit), global::ProtoBuf.ProtoBufPacket.PayloadClassRoomQuit.Parser, new[]{ "RoomSeq", "RoomType" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtoBuf.ProtoBufPacket.PayloadClassRoomQuit), global::ProtoBuf.ProtoBufPacket.PayloadClassRoomQuit.Parser, new[]{ "RoomSeq", "RoomType" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtoBuf.ProtoBufPacket.PayloadClassRPSGamePlayersInfo), global::ProtoBuf.ProtoBufPacket.PayloadClassRPSGamePlayersInfo.Parser, new[]{ "RpsGamePlayerNames" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtoBuf.ProtoBufPacket.PayloadClassRPSGameTableInfo), global::ProtoBuf.ProtoBufPacket.PayloadClassRPSGameTableInfo.Parser, new[]{ "RpsTableStatus", "RpsGamePlays" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ProtoBuf.ProtoBufPacket.PayloadClassRPSGamePlaying), global::ProtoBuf.ProtoBufPacket.PayloadClassRPSGamePlaying.Parser, new[]{ "RpsGamePlay" }, null, null, null, null)
           }));
     }
     #endregion
@@ -82,6 +92,14 @@ namespace ProtoBuf.ProtoBufPacket {
     [pbr::OriginalName("RoomCreate")] RoomCreate = 2002,
     [pbr::OriginalName("RoomJoin")] RoomJoin = 2003,
     [pbr::OriginalName("RoomQuit")] RoomQuit = 2004,
+    /// <summary>
+    /// RPS게임 관련
+    /// </summary>
+    [pbr::OriginalName("RPSGamePlayersInfo")] RpsgamePlayersInfo = 3001,
+    [pbr::OriginalName("RPSGameTableInfo")] RpsgameTableInfo = 3002,
+    [pbr::OriginalName("RPSGameGo")] RpsgameGo = 3003,
+    [pbr::OriginalName("RPSGamePlaying")] RpsgamePlaying = 3004,
+    [pbr::OriginalName("RPSGameProgress")] RpsgameProgress = 3005,
   }
 
   #endregion
@@ -1817,6 +1835,614 @@ namespace ProtoBuf.ProtoBufPacket {
           }
           case 16: {
             RoomType = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///* PayloadClassRPSGamePlayersInfo 메시지 정의 (3001)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PayloadClassRPSGamePlayersInfo : pb::IMessage<PayloadClassRPSGamePlayersInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PayloadClassRPSGamePlayersInfo> _parser = new pb::MessageParser<PayloadClassRPSGamePlayersInfo>(() => new PayloadClassRPSGamePlayersInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PayloadClassRPSGamePlayersInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProtoBuf.ProtoBufPacket.ProtoBufPacketReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadClassRPSGamePlayersInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadClassRPSGamePlayersInfo(PayloadClassRPSGamePlayersInfo other) : this() {
+      rpsGamePlayerNames_ = other.rpsGamePlayerNames_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadClassRPSGamePlayersInfo Clone() {
+      return new PayloadClassRPSGamePlayersInfo(this);
+    }
+
+    /// <summary>Field number for the "rpsGamePlayerNames" field.</summary>
+    public const int RpsGamePlayerNamesFieldNumber = 1;
+    private static readonly pb::FieldCodec<string> _repeated_rpsGamePlayerNames_codec
+        = pb::FieldCodec.ForString(10);
+    private readonly pbc::RepeatedField<string> rpsGamePlayerNames_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// 자리를 모두 ""으로 표시, 자리에 사람이 있으면 사람의 닉네임으로 대체
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> RpsGamePlayerNames {
+      get { return rpsGamePlayerNames_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PayloadClassRPSGamePlayersInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PayloadClassRPSGamePlayersInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!rpsGamePlayerNames_.Equals(other.rpsGamePlayerNames_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= rpsGamePlayerNames_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      rpsGamePlayerNames_.WriteTo(output, _repeated_rpsGamePlayerNames_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      rpsGamePlayerNames_.WriteTo(ref output, _repeated_rpsGamePlayerNames_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += rpsGamePlayerNames_.CalculateSize(_repeated_rpsGamePlayerNames_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PayloadClassRPSGamePlayersInfo other) {
+      if (other == null) {
+        return;
+      }
+      rpsGamePlayerNames_.Add(other.rpsGamePlayerNames_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            rpsGamePlayerNames_.AddEntriesFrom(input, _repeated_rpsGamePlayerNames_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            rpsGamePlayerNames_.AddEntriesFrom(ref input, _repeated_rpsGamePlayerNames_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///* PayloadClassRPSGameTableInfo 메시지 정의 (3002)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PayloadClassRPSGameTableInfo : pb::IMessage<PayloadClassRPSGameTableInfo>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PayloadClassRPSGameTableInfo> _parser = new pb::MessageParser<PayloadClassRPSGameTableInfo>(() => new PayloadClassRPSGameTableInfo());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PayloadClassRPSGameTableInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProtoBuf.ProtoBufPacket.ProtoBufPacketReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadClassRPSGameTableInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadClassRPSGameTableInfo(PayloadClassRPSGameTableInfo other) : this() {
+      rpsTableStatus_ = other.rpsTableStatus_;
+      rpsGamePlays_ = other.rpsGamePlays_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadClassRPSGameTableInfo Clone() {
+      return new PayloadClassRPSGameTableInfo(this);
+    }
+
+    /// <summary>Field number for the "rpsTableStatus" field.</summary>
+    public const int RpsTableStatusFieldNumber = 1;
+    private int rpsTableStatus_;
+    /// <summary>
+    /// 게임이 시작상태인지 대기 상태인지
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int RpsTableStatus {
+      get { return rpsTableStatus_; }
+      set {
+        rpsTableStatus_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rpsGamePlays" field.</summary>
+    public const int RpsGamePlaysFieldNumber = 2;
+    private static readonly pb::FieldCodec<int> _repeated_rpsGamePlays_codec
+        = pb::FieldCodec.ForInt32(18);
+    private readonly pbc::RepeatedField<int> rpsGamePlays_ = new pbc::RepeatedField<int>();
+    /// <summary>
+    /// 가위바위보 뭐냇는지 확인?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<int> RpsGamePlays {
+      get { return rpsGamePlays_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PayloadClassRPSGameTableInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PayloadClassRPSGameTableInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpsTableStatus != other.RpsTableStatus) return false;
+      if(!rpsGamePlays_.Equals(other.rpsGamePlays_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpsTableStatus != 0) hash ^= RpsTableStatus.GetHashCode();
+      hash ^= rpsGamePlays_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (RpsTableStatus != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(RpsTableStatus);
+      }
+      rpsGamePlays_.WriteTo(output, _repeated_rpsGamePlays_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (RpsTableStatus != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(RpsTableStatus);
+      }
+      rpsGamePlays_.WriteTo(ref output, _repeated_rpsGamePlays_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpsTableStatus != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RpsTableStatus);
+      }
+      size += rpsGamePlays_.CalculateSize(_repeated_rpsGamePlays_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PayloadClassRPSGameTableInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpsTableStatus != 0) {
+        RpsTableStatus = other.RpsTableStatus;
+      }
+      rpsGamePlays_.Add(other.rpsGamePlays_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            RpsTableStatus = input.ReadInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            rpsGamePlays_.AddEntriesFrom(input, _repeated_rpsGamePlays_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            RpsTableStatus = input.ReadInt32();
+            break;
+          }
+          case 18:
+          case 16: {
+            rpsGamePlays_.AddEntriesFrom(ref input, _repeated_rpsGamePlays_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  ///* PayloadClassRPSGamePlaying 메시지 정의 (3004)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PayloadClassRPSGamePlaying : pb::IMessage<PayloadClassRPSGamePlaying>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PayloadClassRPSGamePlaying> _parser = new pb::MessageParser<PayloadClassRPSGamePlaying>(() => new PayloadClassRPSGamePlaying());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PayloadClassRPSGamePlaying> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::ProtoBuf.ProtoBufPacket.ProtoBufPacketReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadClassRPSGamePlaying() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadClassRPSGamePlaying(PayloadClassRPSGamePlaying other) : this() {
+      rpsGamePlay_ = other.rpsGamePlay_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PayloadClassRPSGamePlaying Clone() {
+      return new PayloadClassRPSGamePlaying(this);
+    }
+
+    /// <summary>Field number for the "rpsGamePlay" field.</summary>
+    public const int RpsGamePlayFieldNumber = 1;
+    private int rpsGamePlay_;
+    /// <summary>
+    /// 가위바위보 뭐냇는지 확인?
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int RpsGamePlay {
+      get { return rpsGamePlay_; }
+      set {
+        rpsGamePlay_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PayloadClassRPSGamePlaying);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PayloadClassRPSGamePlaying other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpsGamePlay != other.RpsGamePlay) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpsGamePlay != 0) hash ^= RpsGamePlay.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (RpsGamePlay != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(RpsGamePlay);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (RpsGamePlay != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(RpsGamePlay);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpsGamePlay != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RpsGamePlay);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PayloadClassRPSGamePlaying other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpsGamePlay != 0) {
+        RpsGamePlay = other.RpsGamePlay;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            RpsGamePlay = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            RpsGamePlay = input.ReadInt32();
             break;
           }
         }

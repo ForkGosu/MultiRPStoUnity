@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appRunOS: 1
-  appName: MultiRPStoUnity
+  appName: MultiRPS
   appVersion: 0.1.0
   userUUID: none
   appCurrentScene: Splash
@@ -829,45 +829,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 540570853}
     m_Modifications:
-    - target: {fileID: 1228747023817542578, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1228747023817542578, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1228747023817542578, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1228747023817542578, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2089466649740882128, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2089466649740882128, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2089466649740882128, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 2089466649740882128, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
-      objectReference: {fileID: 0}
     - target: {fileID: 2119162489732561354, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
       propertyPath: m_Name
       value: AlertWindowBase
-      objectReference: {fileID: 0}
-    - target: {fileID: 2119162489732561354, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8791584879660334277, guid: c35549ff988c71d4086581a5cc33e5a3, type: 3}
       propertyPath: m_Pivot.x
